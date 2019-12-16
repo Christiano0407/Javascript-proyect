@@ -61,7 +61,7 @@ header img {
 }
 
 .header__menu--profile img {
-    width: 30px;
+    width: 40px;
     /* height: 30px; */
     margin-right: 8px;
 }
@@ -70,3 +70,52 @@ header img {
     color: white;
     margin: 0px;
 }
+
+section .main {
+    width: 100%;
+}
+
+.main {
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+ .input {
+   width: 70%;
+   height: 50px;
+   border: 2px solid rgb(254, 254, 255);
+   border-radius: 20px;
+   padding: 0 20px;
+   background-color: rgb(140, 95, 253);
+   font-size: 15px;
+   outline: none;
+/*    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; */
+
+  /*  justify-content: center; */
+
+}
+
+.input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+/* 
+input:focus {
+    outline: none;
+} */
