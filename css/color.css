@@ -17,3 +17,8 @@ header img {
     margin-top: 10px;
     margin-left: 10px;
 }
+
+.login-container-social img {
+    width: 30px;
+    height: 30px;
+}
