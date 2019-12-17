@@ -140,5 +140,21 @@ input:focus {
     background-color: rgb(40, 2, 136);
     margin-right: 10px;
     border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
 
+.carousel__item:hover {
+    transform: translate(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover{
+    opacity: 1;
+    transform: scale(1.5);
 }
