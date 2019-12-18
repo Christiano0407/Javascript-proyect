@@ -46,3 +46,31 @@ header nav .header__nav {
 header nav .header__nav a {
     margin-right: 10px ;
 }
+
+.header__nav--form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+input {
+    background-color: white;
+    height: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: none;
+    background-repeat: no-repeat;
+}
+
+::placeholder {
+    color: black;
+    opacity: .5;
+    /* margin-left: 5px; */
+    text-align: center;
+}
