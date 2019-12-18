@@ -53,7 +53,11 @@ header nav .header__nav a {
     margin-right: 30px;
 }
 
-input {
+/* form .header__nav--form {
+    background-image: url(../img/search-512.png);
+} */
+
+.header__nav--form input {
     background-color: white;
     height: 20px;
     margin-top: 0;
@@ -68,9 +72,55 @@ input {
     background-repeat: no-repeat;
 }
 
+.header__nav--form label {
+    
+}
+
 ::placeholder {
     color: black;
     opacity: .5;
     /* margin-left: 5px; */
     text-align: center;
+}
+
+.carousel {
+    width: 100%;
+    overflow-x: scroll;
+    background-color: #273b47;
+    padding: 30px;
+    position: relative;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    margin:0;
+}
+
+.carousel__item {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+   /*  background-color: rgb(40, 2, 136); */
+    margin-right: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.carousel__item img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
 }
