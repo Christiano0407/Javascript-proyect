@@ -44,6 +44,7 @@ header img {
     padding: 60px 60px 40px;
     min-height: 700px;
     width: 300px;
+    box-shadow: 5px 5px black;
 }
 
 .login__container--social img {
@@ -147,5 +148,28 @@ button:hover {
     background-color: rgba(255, 255, 255, .2);
     box-shadow: rgba(255, 255, 255, .1);
     color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #B30E8E;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: rgb(150, 148, 148);
+    font-size: 16px;
+    outline: none;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
