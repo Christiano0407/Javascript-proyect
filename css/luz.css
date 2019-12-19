@@ -22,7 +22,10 @@ header img {
 
 header .header__menu {
     margin-right: 30px;
-    /* width: 100%; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 header .header__menu ul {
