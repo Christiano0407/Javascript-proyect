@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-
+    background-color: #273b47;
 }
 
 header {
@@ -20,11 +20,12 @@ header img {
 }
 
 
-.header__menu {
-    margin-left: 30px;
+header .header__menu {
+    margin-right: 30px;
+    /* width: 100%; */
 }
 
-.header__menu ul {
+header .header__menu ul {
     width: 100px;
     display: none;
     list-style: none;
@@ -34,8 +35,40 @@ header img {
     padding: 0px;
 }
 
+header .header__menu:hover ul, ul:hover {
+    display: inline-block;
+}
+
+header .header__menu li {
+    margin: 10px 0px;
+}
+
+header .header__menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+header .header__menu li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header .header__menu .header__menu--profile {
+   display: flex;
+   align-items: center;
+   margin-right: 8px;
+   flex-direction: column;
+  /*  width: 100%;
+   justify-content: flex-end; */
+}
 
 .header__menu--profile img {
-    width: 40px;
+    width: 30px;
     margin-right: 8px;
+}
+
+.header__menu--profile p {
+    color: white;
+    margin: 0;
+
 }
