@@ -1,6 +1,81 @@
 body {
     margin: 0px;
     padding: 0px;
-
+    
 }
 
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #AAFF69;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header__menu--profile img {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    
+}
+
+ .error {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(#AAFF69, #A925B3);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    display: inline-block;
+}
+
+.error__text {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error__text h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #A925B3;
+    font-size: 14px;
+    border: 1px solid rgb(77, 17, 82);
+    position: absolute;
+    bottom: 0px;
+}
+
+.animation {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+h2 {
+    animation-name: h2;
+  animation-duration: 1s;
+}
+
+@keyframes h2 {
+    0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
