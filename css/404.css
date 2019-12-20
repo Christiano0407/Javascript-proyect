@@ -71,7 +71,7 @@ footer {
 
 h2 {
     animation-name: h2;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 @keyframes h2 {
