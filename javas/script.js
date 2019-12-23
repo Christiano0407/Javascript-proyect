@@ -16,3 +16,9 @@ var letra = nombre.charAt(0);
 var numero = apellido.length;
 
 var nombreCompleto =`${nombre}  ${apellido} `;
+
+var anos = 27;
+anos += 1;
+
+var peso = 50;
+peso -= 3;
