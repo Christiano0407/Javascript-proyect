@@ -38,9 +38,9 @@ var leo = {
     altura: 90
 };
 
-function polo({altura}){
-    console.log(`Hola, mi ${altura}`)
+function polo () {
+ 
 };
 
 polo(leo);
-
+ 
