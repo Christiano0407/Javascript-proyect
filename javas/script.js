@@ -22,3 +22,13 @@ anos += 1;
 
 var peso = 50;
 peso -= 3;
+
+var sobrenombre = `Christiano`;
+var apellidos = `Ronan`;
+
+function familia() {
+    console.log(`Hola, me dicen ${sobrenombre} y, mi familia es ${apellidos}`)
+};
+
+familia(sobrenombre, apellidos);
+
