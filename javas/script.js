@@ -32,3 +32,15 @@ function familia() {
 
 familia(sobrenombre, apellidos);
 
+var leo = {
+    peso: 50,
+    ojos: `negros`,
+    altura: 90
+};
+
+function polo({altura}){
+    console.log(`Hola, mi ${altura}`)
+};
+
+polo(leo);
+
