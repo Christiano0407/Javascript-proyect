@@ -69,3 +69,61 @@ function cine(pelicula){
 
 cine(Toro);
 
+
+var Shantal = {
+    nombre: `Shantal`,
+    edad: 18,
+}
+
+const MAYORIA_DE_EDAD = 18;
+
+function edad(mujer){
+    return mujer.edad >= MAYORIA_DE_EDAD;
+}
+
+function edades(mujer){
+ if(edad(mujer)){
+     console.log(`Es mayor de edad${mujer.edad}`)
+ }else{
+     console.log(`Es ${mujer.edad}, menor de edad`)
+ }
+}
+
+edades(Shantal);
+
+
+var Luisa = {
+    nombre:`Luisa`,
+    edad:17,
+    peso: 50,
+};
+
+const EDAD = 21;
+const PESO = 50;
+
+function sueño(mujeres){
+    return mujeres.edad < EDAD;
+}
+
+function pesos(mujeres) {
+    return mujeres.peso >= PESO;
+}
+
+function sueños(mujeres){
+    if(sueño===mujeres.edad){
+     console.log(`Es mayor de edad ${mujeres.edad}`)
+    }else{
+        console.log(`No es mayor de edad ${mujeres.edad}`)
+    }
+
+    if(pesos(mujeres)){
+        console.log(`Su peso es el ideal porque, está en ${mujeres.peso}`)
+    }else {
+        console.log(`Tiene sobrepeso ${mujeres.peso}`)
+    }
+}
+
+sueños(Luisa);
+
+
+
