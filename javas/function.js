@@ -33,3 +33,39 @@ function captain(persona){
 }
 
 captain(Steve);
+
+
+var Toro = {
+    nombre:`Guillermo`,
+    apellido:`Del Toro`,
+    profesion:`Cineasta`,
+    edad:50,
+    nacio:`México`,
+    genero:`Terror`,
+}
+
+function cine(pelicula){
+
+    if(pelicula.nombre){
+        console.log(`Él es ${pelicula.nombre}`)
+    }
+
+    if(pelicula.apellido){
+        console.log(`Y, se apellida:${pelicula.apellido}`)
+    }
+
+    if(pelicula===pelicula.profesion){
+        console.log(`El no es actor${pelicula.profesion}`)
+    }else {
+        console.log(`Él, es ${pelicula.profesion}`)
+    }
+
+    if(pelicula===pelicula.nacio){
+        console.log(`Es Nacido en Estados Unidos ${pelicula.nacio}`)
+    }else {
+        console.log(`No es nacido en Estados Unidos, es nacido en ${pelicula.nacio}`)
+    }
+}
+
+cine(Toro);
+
