@@ -1,8 +1,8 @@
-var Luisa = {
+/* var Luisa = {
     nombre: `Luisa`,
     apellido:`Velázquez`,
     peso: 50,
-}; 
+};  */
 
 /* const mujeres = (mujer) => {
     console.log(`Hola, me llamo ${mujer.nombre}`);
@@ -12,7 +12,7 @@ var Luisa = {
 mujeres(Luisa); */
 
 
- const INCREMENTO_PESO = 0.2;
+/*  const INCREMENTO_PESO = 0.2;
 const DIAS_ANO = 365;
 const META = Luisa.peso -3;
 var  dias = 0; 
@@ -29,7 +29,7 @@ const comeMucho = () => Math.random() < 0.3
 
 const deporte = () => Math.random() < 0.4
 
-console.log(`${Luisa.nombre} aumentó de peso éste último año ${Luisa.peso}kg`);
+console.log(`${Luisa.nombre} aumentó de peso éste último año ${Luisa.peso}kg`); */
 
 /* for (var i = 1; i <= DIAS_ANO; i++) {
   
@@ -42,7 +42,7 @@ console.log(`${Luisa.nombre} aumentó de peso éste último año ${Luisa.peso}kg
     }
 } */
 
-while(Luisa.peso > META) {
+/* while(Luisa.peso > META) {
 
 if (comeMucho()) {
   mujeres(Luisa)
@@ -57,7 +57,7 @@ dias += 1
 
 
 
-console.log(`pasaron ${dias} bajó de peso ${Luisa.nombre} `); 
+console.log(`pasaron ${dias} bajó de peso ${Luisa.nombre} `);  */
 
 
 /*  var Chris = {
@@ -89,4 +89,18 @@ for(var i = 1; i = DIAS_TODO_ANO; i++) {
 }
 console.log(`${Chris.nombre}, aumentó a ${chris.peso.toFixed(2)}kg, éste año`)  */
 
+var contador = 0; 
+
+const lluvia = () => Math.random() < 0.25
+
+do {
+contador+=1
+
+} while(!lluvia())
+ 
+if(contador ===1){
+ Console.log(`Fuí a ver una vez`)
+}else {
+console.log(`Fuí a ${contador} veces`)
+};
 
