@@ -91,15 +91,15 @@ console.log(`${Chris.nombre}, aumentó a ${chris.peso.toFixed(2)}kg, éste año`
 
 var contador = 0; 
 
-const lluvia = () => Math.random() < 0.25
+const llueve = () => Math.random() < 0.25
 
 do {
-contador+=1
+contador++
 
-} while(!lluvia())
+} while(!llueve());
  
-if(contador ===1){
- Console.log(`Fuí a ver una vez`)
+if(contador === 1){
+ console.log(`Fuí a ver ${contador} vez`)
 }else {
 console.log(`Fuí a ${contador} veces`)
 };
