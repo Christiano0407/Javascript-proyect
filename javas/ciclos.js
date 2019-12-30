@@ -89,7 +89,7 @@ for(var i = 1; i = DIAS_TODO_ANO; i++) {
 }
 console.log(`${Chris.nombre}, aumentó a ${chris.peso.toFixed(2)}kg, éste año`)  */
 
-var contador = 0; 
+/* var contador = 0; 
 
 const llueve = () => Math.random() < 0.25
 
@@ -102,5 +102,40 @@ if(contador === 1){
  console.log(`Fuí a ver ${contador} vez`)
 }else {
 console.log(`Fuí a ${contador} veces`)
-};
+}; */
 
+var Premier = prompt (`Quién realizó la mejor transferencia en el mercado...?`)
+
+switch(Premier) {
+    case `Arsenal`:
+        console.log(`Gabriel Martinelli (Ituano) Undisclosed Details
+        Dani Ceballos (Real Madrid) Loan Details
+        William Saliba (Saint-Etienne) Undisclosed Details`)
+    break
+     case `Aston Villa`:
+         console.log(`Jota (Birmingham) Undisclosed Details
+         Anwar El Ghazi (Lille) Undisclosed Details
+         Wesley (Club Brugge) Undisclosed Details`)
+    break 
+    case `Chelsea`:
+        console.log(`Mateo Kovacic (Real Madrid) Undisclosed Details`)  
+    break
+    case `Everton`:
+        console.log(`Jonas Lossl (Huddersfield Town) Free Details
+        Andre Gomes (Barcelona) £22m Details
+        Fabian Delph (Man City) Undisclosed Details`)  
+    break 
+    case `Liverpool`:
+         console.log(`Jonas Lossl (Huddersfield Town) Free Details
+         Andre Gomes (Barcelona) £22m Details
+         Fabian Delph (Man City) Undisclosed Details`)
+    break
+    case `Manchester United`:
+        console.log(`Daniel James (Swansea City) Undisclosed Details
+        Aaron Wan-Bissaka (Crystal Palace) Undisclosed Details
+        Harry Maguire (Leicester City) Undisclosed Details`)
+        break
+    default:
+        console.log(`No es un equipo de la Premier`)
+        break
+};
