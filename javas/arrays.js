@@ -162,3 +162,42 @@ var adultas = ninas.map(girls)
 
 console.log(adultas);
 
+
+function Persona (nombre, apellido) {
+    this.nombre = nombre,
+    this.apellido = apellido
+}
+
+Persona.prototype.saludar = function () {
+    console.log(`Hola, yo soy ${this.nombre} ${this.apellido}`)
+}
+
+var sacha = new Persona (`Sacha`, `Vela`)
+sacha.saludar()
+
+
+const ALTA = 1.80
+
+
+function Persona (nombre, apellido, altura) {
+    this.nombre = nombre,
+    this.apellido = apellido
+    this.altura = altura
+}
+
+Persona.prototype.gritar = function (){
+    if(this.altura >= ALTA) {
+        console.log(`Hola, soy ${this.nombre}, soy alta`)
+    }else {
+        console.log(`Demonios, soy muy baja!`)
+    }
+}
+
+var ana = new Persona (`Ana`, `Armas`, 1.75)
+ana.gritar()
+var erika = new Persona (`Erika`, `Luna`, 1.90)
+erika.gritar()
+var joel = new Persona (`Joel`, `Rosas`, 1.65)
+joel.gritar()
+
+
