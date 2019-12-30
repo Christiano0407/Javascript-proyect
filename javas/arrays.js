@@ -92,3 +92,73 @@ var joven = [Erika, Fausto, Rodrigo, Natalia, Anibal]
 var jovenAlta = joven.filter(esAlta)
 
 console.log(jovenAlta);
+
+
+var Camila = {
+    nombre: `Camila`,
+    altura: 1.90,
+    sexo: `Mujer`,
+}
+
+var Sadri = {
+    nombre: `Sadri`,
+    altura: 1.80,
+    sexo: `Mujer`,
+}
+
+var Ale = {
+    nombre: `Alejandra`,
+    altura: 1.70,
+    sexo: `Mujer`
+}
+
+var Victor = {
+    nombre: `Victor`,
+    sexo: `Hombre`,
+}
+
+var Erik = {
+    nombre: `Erik`,
+    sexo: `Hombre`,
+}
+
+
+const sexos = ({sexo}) => sexo > `Hombre` 
+
+var genero = [Camila, Sadri, Ale, Victor, Erik]
+
+var generos = genero.filter(sexos)
+
+console.log(generos);
+
+
+
+var Nat = {
+    nombre: `Natasaha`,
+    altura: 1.65,
+}
+
+var Reg = {
+    nombre: `Regina`,
+    altura: 1.75, 
+}
+
+var Mar = {
+    nombre: `Mara`,
+    altura: 1.55,
+}
+
+
+
+const girls = girl => ({
+
+    ...girl,
+    altura: girl.altura * 100
+})
+
+var ninas = [ Nat, Reg, Mar]
+
+var adultas = ninas.map(girls)
+
+console.log(adultas);
+
