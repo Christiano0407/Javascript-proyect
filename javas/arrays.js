@@ -225,9 +225,9 @@ class Desarrollador extends Hermana {
   }
 
   saludar(){
-      if(this.sexo === mujer){
+      if(this.sexo <= mujer){
           console.log(`Hola, soy ${this.nombre}, y soy ${this.sexo} y soy desarrolladora`)
-      }else if(this.sexo === hombre) {
+      }else if (this.sexo <= hombre) {
        console.log(`Hola soy ${this.sexo}, y soy desarrollador`)
       }
   }
@@ -245,3 +245,7 @@ var olson = new Desarrollador (`Ashley`, `Olson`, `Mujer`);
 var patrick = new Desarrollador(`Patrick`, `Dempsey`, `Hombre`);
 
 
+samantha.saludar();
+lebron.saludar();
+olson.saludar();
+patrick.saludar(Desarrollador);
