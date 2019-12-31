@@ -201,3 +201,47 @@ var joel = new Persona (`Joel`, `Rosas`, 1.65)
 joel.gritar()
 
 
+
+class Hermana {
+    constructor (nombre, apellido, sexo){
+        this.nombre = nombre, 
+        this.apellido = apellido,
+        this.sexo = sexo
+    }
+
+    saludar(){
+     console.log(`Hola, soy ${this.nombre}, ${this.apellido}`)
+    }
+
+    sexo(){
+     console.log(`Hola, soy ${this.nombre}, ${this.sexo}`)
+    }
+};
+
+
+class Desarrollador extends Hermana {
+  constructor (nombre, apellido, sexo) {
+      super(nombre, apellido, sexo)
+  }
+
+  saludar(){
+      if(this.sexo === mujer){
+          console.log(`Hola, soy ${this.nombre}, y soy ${this.sexo} y soy desarrolladora`)
+      }else if(this.sexo === hombre) {
+       console.log(`Hola soy ${this.sexo}, y soy desarrollador`)
+      }
+  }
+};
+
+var mujer = `mujer`;
+var hombre = `hombre`;
+
+var samantha = new Hermana (`Samatha`, `Romanov`, `Mujer` );
+
+var lebron = new Hermana (`James`, `Lebron`, `Hombre`);
+
+var olson = new Desarrollador (`Ashley`, `Olson`, `Mujer`);
+
+var patrick = new Desarrollador(`Patrick`, `Dempsey`, `Hombre`);
+
+
