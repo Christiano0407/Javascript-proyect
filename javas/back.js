@@ -68,3 +68,26 @@ obtenerPersonaje(8);
 obtenerPersonaje(9);
 obtenerPersonaje(10);
 
+const APISS_URLS = `https://swapi.co/api/`
+const YODA_URL = `people/:id`
+const OPTIONSS = {crossDomain: true}
+
+function starWars(id, callback){
+ const URLS = `${APISS_URLS}${YODA_URL.replace(`:id`, id)}`
+ 
+ $.get(URLS, YODA_URL, function(personas){
+     console.log(`Hola, nosotros somos: ${personas.name}`)
+     if(callback){
+         callback()
+     }
+ })
+}
+
+
+starWars(11, function(){
+   starWars(12, function(){
+       starWars(13, function(){
+           starWars(14)
+       })
+   })
+})
