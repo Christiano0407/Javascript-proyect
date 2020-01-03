@@ -46,3 +46,25 @@ const FORCE = function(leia){
 
 $.get(LEIAURL, OPTS, FORCE)
 
+const APIS_URLS = `https://swapi.co/api/`
+const WARS_URL = `people/:id`
+
+const OPTNS = {crossDomain: true}
+
+const LORD = function(personaje){
+    console.log(`Hola, soy ${personaje.name}`)
+}
+
+function obtenerPersonaje(id) {
+    const URL = `${APIS_URLS}${WARS_URL.replace(`:id`, id)}`
+    $.get(URL, WARS_URL, LORD)
+}
+
+obtenerPersonaje(2);
+obtenerPersonaje(3);
+obtenerPersonaje(6);
+obtenerPersonaje(7);
+obtenerPersonaje(8);
+obtenerPersonaje(9);
+obtenerPersonaje(10);
+
