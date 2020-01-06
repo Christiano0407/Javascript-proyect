@@ -26,3 +26,29 @@ obtenerPersonaje(1)
     console.log(`El personaje uno es: ${personaje.name}`)
 })
 .catch(onError)
+
+const APIS = `https://swapi.co/api/`
+const PEOPLES = `people/:id`
+const OPT = {crossDomain: true}
+
+function personajeNuevo(id){
+    return new Promise((resolve, reject) => {
+        const URLS = `${APIS}${PEOPLES.replace(`:id`, id)}`
+        $.get(URLS, OPT, function(data){
+            resolve(data)
+        })
+        .fail(() => reject(id))
+    })
+}
+
+
+function errorAll(id){
+    console.log(`Lo siento ${id}`)
+}
+
+personajeNuevo(2)
+.then( function(persona) {
+    console.log(`Soy el personaje dos: ${persona.name}`)
+})
+.catch(errorAll)
+
