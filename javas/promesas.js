@@ -24,6 +24,15 @@ function onError(id){
 obtenerPersonaje(1)
 .then( function (personaje) {
     console.log(`El personaje uno es: ${personaje.name}`)
+    return obtenerPersonaje(3)
+})
+
+.then( function(personaje){
+    console.log(`Soy el nuevo ${personaje.name}`)
+    return obtenerPersonaje(4)
+})
+.then(function(personaje){
+    console.log(`Soy el que sigue ${personaje.name}`)
 })
 .catch(onError)
 
@@ -46,9 +55,17 @@ function errorAll(id){
     console.log(`Lo siento ${id}`)
 }
 
-personajeNuevo(2)
+var ids = [5, 6, 7, 8]
+
+var promesas = ids.map(id => personajeNuevo(id))
+Promise
+.all(promesas)
+.then(personajess => console.log(personajess))
+.catch(errorAll)
+
+/* personajeNuevo(2)
 .then( function(persona) {
     console.log(`Soy el personaje dos: ${persona.name}`)
 })
-.catch(errorAll)
+.catch(errorAll) */
 
