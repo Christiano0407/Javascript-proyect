@@ -1,23 +1,27 @@
 var Mau = {
     nombre: `Mauricio`,
-    edad: 28
+    edad: 28,
+    peso: 50
 }
+/* console.log(`Todavía tengo ${Mau.edad} años`)
 const EDADMAYOR = 30;
-/* 
-function grande(cumpleanos){
-    if(Mau === EDADMAYOR){
-        console.log(`Ya soy un señor`);
-    }else{
-        console.log(`Todavía no soy mayor de edad`);
-    }
-}
-grande(Mau); */
-function cumple(edades){
- if(Mau.edad <= EDADMAYOR){
-     console.log(`Todavía me faltan dos`);
- }else{
-     console.log(`Ya soy mayor`);
- }
-}
-cumple(Mau);
+const DIAS_ANO = 365;
 
+menor = () => {
+    if(Mau.edad < EDADMAYOR){
+        console.log(`Todavía soy joven!`)
+    }else {
+        console.log(`Demonios!`)
+    }
+} 
+
+for (var i = 1; i <= DIAS_ANO; i++){
+
+    var random = Math.random();
+    if(random < 0.25){
+        menor(Mau);
+    }else if (random < 0.5)
+    console.log(`No!`)
+}
+console.log(`Todavía tengo ${Mau.edad} años`) */
+/* menor(Mau); */
