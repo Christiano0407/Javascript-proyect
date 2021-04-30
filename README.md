@@ -5,6 +5,25 @@ Desarrollo de proyectos con javascript.
 # CDN
 - [CDNJs](https://cdnjs.com/)
 
+# Fonts
+- [Google-Fonts](https://fonts.google.com/)
+- [Adobe-Fonts](https://fonts.adobe.com/)
+
+# Colors
+- [Adobe-color](https://color.adobe.com/es/create/color-wheel)
+- [Coolors](https://coolors.co/)
+- [Web-Gradients](https://webgradients.com/)
+- [MyColor](https://mycolor.space/gradient3)
+
+# Image
+- [TinyPng](https://tinypng.com/)
+- [Pexels](https://www.pexels.com/)
+- [Unsplash](https://unsplash.com/)
+
+
+# Icons
+- [FontAwesome](https://fontawesome.com/)
+
 # Tools Javascript: 
 - [GSAP](https://greensock.com/)
 - [PUREJS](https://pure-js.com/)
